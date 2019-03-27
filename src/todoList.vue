@@ -29,6 +29,7 @@ export default {
   },
   methods:{
     handleSubmit(){
+      if(this.inputValue === '')return
       this.list.push(this.inputValue)
       this.inputValue = ''
     },
